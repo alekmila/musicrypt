@@ -1,0 +1,21 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <h3 class="base-page-title">Files</h3>
+
+      <div class="list-group">
+        {% for f in object_list %}
+          <!-- <li class="list-group-item"> -->
+            <a href="{% url 'encryptedfile_detail' f.pk %}" class="list-group-item">{{ f }}</a>
+          <!-- </li> -->
+        {% endfor %}
+      </div> <!-- .list-group -->
+
+    </div> <!-- .col -->
+  </div> <!-- .row -->
+</div> <!-- .container -->
+{% endblock content %}

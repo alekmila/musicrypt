@@ -1,0 +1,33 @@
+1. How to enter the DATABASE:
+- open cmd
+- cd C:\work\musicrypt
+- sqlite\sqlite3.exe musicrypt\db.sqlite3
+
+DATABASE COMMANDS:
+- . tables
+- SELECT * FROM base_encryptedfile;
+- DELETE FROM base_encryptedfile WHERE id=1;
+
+
+2. How to run the APPLICATION:
+- open cmd
+- cd C:\work\musicrypt --> goes into the top project directory
+- env\Scripts\activate  --> activates the virtual environment
+- cd musicrypt
+- python manage.py runserver
+- open Chrome and go to localhost:8000
+
+
+3. Project STRUCTURE:
+- base/models --> describes what goes into the database
+- base/urls --> describes URLs
+- base/crypto --> provides functions for encryption and decryption of files
+- base/views --> describes pages and logic
+- base/templates --> HTML files (what the browser reads and displays)
+- base/static --> CSS (styles) and Bootstrap
+
+
+4. Project ADMINISTRATION:
+- Go to localhost:8000/admin
+- username: alek
+- password: 1234
